@@ -19,7 +19,8 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #040404 url("../img/bg.jpg") top right no-repeat;
+  background: #040404 url("../img/Mj-banner.png") top right no-repeat;
+  /* background: #040404 url("../img/bg.jpg") top right no-repeat; */
   background-size: cover;
   left: 0;
   right: 0;
@@ -178,11 +179,14 @@ h6 {
 
 #scroll-view-navbar-header.header-top h1 {
   margin-right: auto;
-  font-size: 36px;
+  margin-bottom: 0;
+  font-size: 48px;
 }
 
 #scroll-view-navbar-header.header-top img {
   max-height: 50px;
+  max-width: 100%;
+  width: 100%;
   padding-right: 15px;
 }
 
@@ -192,7 +196,7 @@ h6 {
   }
 
   #scroll-view-navbar-header.header-top h1 {
-    font-size: 26px;
+    font-size: 38px;
   }
 }
 
@@ -703,7 +707,7 @@ section .container {
   transform-style: preserve-3d;
 }
 
-.services .icon-box .icon i {
+.services .icon-box .icon img {
   color: #fff;
   font-size: 28px;
 }
@@ -746,8 +750,10 @@ section .container {
   background: #fff;
 }
 
-.services .icon-box:hover .icon i {
+.services .icon-box:hover .icon img {
   color: #c68660;
+  fill: red;
+  background-color: blue;
 }
 
 .services .icon-box:hover .icon::before {
