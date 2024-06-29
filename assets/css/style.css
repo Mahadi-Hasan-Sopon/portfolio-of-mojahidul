@@ -750,10 +750,8 @@ section .container {
   background: #fff;
 }
 
-.services .icon-box:hover .icon img {
-  color: #c68660;
-  fill: red;
-  background-color: blue;
+.services .icon-box:hover .icon .svg-hover {
+  fill: #c68660 !important;
 }
 
 .services .icon-box:hover .icon::before {
@@ -1007,6 +1005,13 @@ section .container {
   background: rgba(255, 255, 255, 0.08);
 }
 
+.contact .info-box .social-links i.bx {
+  font-size: 24px;
+  color: white;
+  padding: 0;
+  background: none;
+}
+
 .contact .info-box i.bx {
   font-size: 24px;
   color: #c68660;
@@ -1051,8 +1056,10 @@ section .container {
   transition: 0.3s;
 }
 
-.contact .info-box .social-links a:hover {
+.contact .info-box .social-links a:hover,
+.contact .info-box .social-links i.bx:hover {
   color: #c68660;
+  background: none;
 }
 
 .contact .php-email-form {
