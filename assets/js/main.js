@@ -191,3 +191,24 @@
    */
   new PureCounter();
 })();
+
+(function () {
+  emailjs.init({
+    publicKey: "wq9YSMq1eBg_1DrLx",
+  });
+
+  document
+    .getElementById("contact-form")
+    .addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      emailjs.sendForm("contact_service", "contact_form", this).then(
+        () => {
+          console.log("Success!");
+        },
+        (error) => {
+          console.log("failure: " + error);
+        }
+      );
+    });
+})();
